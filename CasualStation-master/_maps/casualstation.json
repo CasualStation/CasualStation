@@ -1,7 +1,7 @@
 {
-    "map_name": "Hippie Station 0",
-    "map_path": "map_files/HippieStation1",
-    "map_file": "hippiestation1.dmm",
+    "map_name": "Casual Station",
+    "map_path": "map_files/CasualStation",
+    "map_file": "casualstation.dmm",
     "shuttles": {
         "emergency": "emergency_box",
         "ferry": "ferry_fancy",

@@ -12,7 +12,7 @@ Format:
 	disabled (disables the map)
 endmap
 
-map hippiestation1
+map casualstation
 	default
 	#voteweight 1.5
 endmap
