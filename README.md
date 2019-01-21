@@ -1,2 +1,2 @@
 # CasualStation
-CasualStation Code
+A branch of HippieStation, adjusted for newer players and longer rounds
