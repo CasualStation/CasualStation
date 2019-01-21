@@ -1,9 +1,8 @@
-## HippieStation 13 [![GitHub forks](https://img.shields.io/github/forks/HippieStation/HippieStation.svg?style=social&label=Fork)](https://github.com/HippieStation/HippieStation#fork-destination-box)
+## CasualStation 13 [![GitHub forks](https://img.shields.io/github/forks/CasualStation/CasualStation.svg?style=social&label=Fork)](https://github.com/CasualStation/CasualStation#fork-destination-box)
 
 **Website:** http://www.hippiestation.com <BR>
 **Code:** https://github.com/hippiestation/hippiestation <BR>
 **Wiki** https://wiki.hippiestation.com/index.php?title=Main_Page <BR>
-**Discord:** [Request access here.](https://hippiestation.com/threads/discord-invites.6055) <BR>
 
 [![Build Status](https://travis-ci.org/HippieStation/HippieStation.png)](https://travis-ci.org/HippieStation/HippieStation/) [![Krihelimeter](http://www.krihelinator.xyz/badge/HippieStation/HippieStation)](http://www.krihelinator.xyz/repositories/HippieStation/HippieStation)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/HippieStation/HippieStation.svg)](https://isitmaintained.com/project/HippieStation/HippieStation "Percentage of issues still open") [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/HippieStation/HippieStation.svg)](https://isitmaintained.com/project/HippieStation/HippieStation "Average time to resolve an issue") ![Coverage](https://img.shields.io/badge/coverage---777%25-red.svg)
@@ -11,14 +10,13 @@
 
 ## ABOUT
 
-This is the Github page for the HippieStation codebase, used on the Space Station 13 server. This codebase is built off the work of many different servers, primarily that of /tg/station 13.
+This is the Github page for the CasualStation codebase, used on the Space Station 13 server. This codebase is built off the work of many different servers, primarily that of HippieStation 13.
 Because of this, the repository inherits /tg/station's licensing, among other things.
 For a full guide on how to set up your own Space Station 13 server, please see the [/tg/station README.md](https://github.com/tgstation/tgstation/blob/master/README.md).
 If you would like to contribute to this codebase, first take a look at the [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 **Website:** https://www.tgstation13.org
 **Code:** https://github.com/tgstation/tgstation
 **Wiki** https://tgstation13.org/wiki/Main_Page
-**IRC:** irc://irc.rizon.net/coderbus or if you dont have an IRC client, you can click  [here](https://kiwiirc.com/client/irc.rizon.net:6667/?&theme=cli#coderbus)
 
 ## DOWNLOADING
 
@@ -28,7 +26,7 @@ Option 1:
 Follow this: https://wiki.hippiestation.com/index.php?title=Setting_up_git
 
 Option 2: Download the source code as a zip by clicking the ZIP button in the
-code tab of https://github.com/hippiestation/hippiestation
+code tab of https://github.com/casualstation/casualstation
 (note: this will use a lot of bandwidth if you wish to update and is a lot of
 hassle if you want to make any changes at all, so it's not recommended.)
 
@@ -37,7 +35,7 @@ Option 3: Download a pre-compiled nightly at https://tgstation13.download/nightl
 Option 4: Use our docker image that tracks the master branch (See commits for build status. Again, same caveats as option 2)
 
 ```
-docker run -d -p <your port>:1337 -v /path/to/your/config:/hippiestation/config -v /path/to/your/data:/hippiestation/data hippiestation/hippiestation <dream daemon options i.e. -public or -params>
+docker run -d -p <your port>:1337 -v /path/to/your/config:/casualstation/config -v /path/to/your/data:/casualstation/data casualstation/casualstation <dream daemon options i.e. -public or -params>
 ```
 
 ## INSTALLATION
@@ -45,11 +43,11 @@ docker run -d -p <your port>:1337 -v /path/to/your/config:/hippiestation/config 
 First-time installation should be fairly straightforward. First, you'll need
 BYOND installed. You can get it from https://www.byond.com/download. Once you've done
 that, extract the game files to wherever you want to keep them. This is a
-sourcecode-only release, so the next step is to compile the server files. Open hippiestation.dme by double-clicking it, open the Build menu, and click compile. This'll take a little while, and if everything's done right you'll get a message like this:
+sourcecode-only release, so the next step is to compile the server files. Open casualstation.dme by double-clicking it, open the Build menu, and click compile. This'll take a little while, and if everything's done right you'll get a message like this:
 
 ```
-saving hippiestation.dmb (DEBUG mode)
-hippiestation.dmb - 0 errors, 0 warnings
+saving casualstation.dmb (DEBUG mode)
+casualtation.dmb - 0 errors, 0 warnings
 ```
 
 If you see any errors or warnings, something has gone wrong - possibly a corrupt
@@ -83,7 +81,7 @@ and install it themselves. Directions can be found at the [rust-g
 repo](https://github.com/tgstation/rust-g).
 
 Finally, to start the server, run Dream Daemon and enter the path to your
-compiled tgstation.dmb file. Make sure to set the port to the one you
+compiled casualstation.dmb file. Make sure to set the port to the one you
 specified in the config.txt, and set the Security box to 'Safe'. Then press GO
 and the server should start up and be ready to join. It is also recommended that
 you set up the SQL backend (see below).
@@ -100,9 +98,10 @@ recompile the game.  Once you start the server up again, you should be running
 the new version.
 
 ## MAPS
-Hippie Station currently comes equipped with five maps.
-* [Hippie BoxStation (default)](https://tgstation13.org/wiki/Boxstation)
-* [BoxStation (default)](https://tgstation13.org/wiki/Boxstation)
+Casual Station currently comes equipped with five maps.
+* [Casual BoxStation (default)](https://tgstation13.org/wiki/Boxstation)
+* [Hippie BoxStation](https://tgstation13.org/wiki/Boxstation)
+* [BoxStation](https://tgstation13.org/wiki/Boxstation)
 * [MetaStation](https://tgstation13.org/wiki/MetaStation)
 * [DeltaStation](https://tgstation13.org/wiki/DeltaStation)
 * [PubbyStation](https://tgstation13.org/wiki/PubbyStation)
