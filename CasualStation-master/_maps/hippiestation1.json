@@ -1,0 +1,11 @@
+{
+    "map_name": "Hippie Station 0",
+    "map_path": "map_files/HippieStation1",
+    "map_file": "hippiestation1.dmm",
+    "shuttles": {
+        "emergency": "emergency_box",
+        "ferry": "ferry_fancy",
+        "cargo": "cargo_box",
+        "whiteship": "whiteship_meta"
+    }
+}
