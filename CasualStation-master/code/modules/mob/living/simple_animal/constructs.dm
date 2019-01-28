@@ -171,9 +171,11 @@
 					new_angle_s -= 360
 				P.setAngle(new_angle_s)
 
-			return BULLET_ACT_FORCE_PIERCE // complete projectile permutation
+			return -1 // complete projectile permutation
 
-	return ..()
+	return (..(P))
+
+
 
 ////////////////////////Wraith/////////////////////////////////////////////
 /mob/living/simple_animal/hostile/construct/wraith

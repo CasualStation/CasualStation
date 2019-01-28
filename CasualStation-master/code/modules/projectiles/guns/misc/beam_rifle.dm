@@ -565,8 +565,8 @@
 
 /obj/item/projectile/beam/beam_rifle/hitscan/aiming_beam/prehit(atom/target)
 	qdel(src)
-	return BULLET_ACT_HIT
+	return FALSE
 
 /obj/item/projectile/beam/beam_rifle/hitscan/aiming_beam/on_hit()
 	qdel(src)
-	return BULLET_ACT_HIT
+	return FALSE

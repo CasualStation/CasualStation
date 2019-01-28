@@ -47,8 +47,8 @@
 		"silver",
 		"iodine",
 		"bromine",
-		"stable_plasma"
-	)
+		"stable_plasma")
+
 	//these become available once the manipulator has been upgraded to tier 4 (femto)
 	var/list/upgrade_reagents = list(
 		"oil",
@@ -56,15 +56,17 @@
 		"acetone",
 		"saltpetre",
 		"ammonia",
-		"diethylamine"
-	)
+		"diethylamine",
+		"cryoxadone",
+		"plasma")
+
 	var/list/emagged_reagents = list(
 		"space_drugs",
 		"morphine",
 		"carpotoxin",
 		"mine_salve",
-		"toxin"
-	)
+		"toxin",
+		"mutagen")
 
 	var/list/saved_recipes = list()
 
@@ -547,7 +549,18 @@
 	desc = "Creates and dispenses mutagen."
 	dispensable_reagents = list("mutagen")
 	upgrade_reagents = null
-	emagged_reagents = list("plasma")
+	emagged_reagents = list(
+	    "plasma",
+		"saltpetre",
+		"eznutriment",
+		"left4zednutriment",
+		"robustharvestnutriment",
+		"plantbgone",
+		"weedkiller",
+		"pestkiller",
+		"ammonia",
+		"ash"
+	)
 
 
 /obj/machinery/chem_dispenser/mutagensaltpeter
@@ -568,7 +581,9 @@
 		"cryoxadone",
 		"ammonia",
 		"ash",
-		"diethylamine")
+		"diethylamine"
+	)
+
 	upgrade_reagents = null
 
 /obj/machinery/chem_dispenser/mutagensaltpeter/Initialize()

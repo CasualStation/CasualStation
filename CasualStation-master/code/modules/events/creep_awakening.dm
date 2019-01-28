@@ -13,9 +13,10 @@
 			continue
 		if(H.stat == DEAD)
 			continue
-		if(!SSjob.GetJob(H.mind.assigned_role) || H.mind.assigned_role in GLOB.nonhuman_positions) //only station jobs sans nonhuman roles, prevents ashwalkers falling in love with crewmembers they never met
+		if(!H.mind.assigned_role || H.mind.assigned_role in GLOB.exp_specialmap[EXP_TYPE_SPECIAL] || H.mind.assigned_role in GLOB.exp_specialmap[EXP_TYPE_ANTAG]) //prevents ashwalkers falling in love with crewmembers they never met
 			continue
-		if(H.mind.has_antag_datum(/datum/antagonist/creep))
+		var/alreadycreepy = H.mind.has_antag_datum(/datum/antagonist/creep)
+		if(alreadycreepy)
 			continue
 		if(!H.getorgan(/obj/item/organ/brain))
 			continue

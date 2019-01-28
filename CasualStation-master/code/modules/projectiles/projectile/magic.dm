@@ -17,7 +17,7 @@
 		var/mob/M = target
 		if(M.anti_magic_check())
 			M.visible_message("<span class='warning'>[src] vanishes on contact with [target]!</span>")
-			return BULLET_ACT_BLOCK
+			return
 		M.death(0)
 
 /obj/item/projectile/magic/resurrection
@@ -31,10 +31,10 @@
 	. = ..()
 	if(isliving(target))
 		if(target.hellbound)
-			return BULLET_ACT_BLOCK
+			return
 		if(target.anti_magic_check())
 			target.visible_message("<span class='warning'>[src] vanishes on contact with [target]!</span>")
-			return BULLET_ACT_BLOCK
+			return
 		if(iscarbon(target))
 			var/mob/living/carbon/C = target
 			C.regenerate_limbs()
@@ -60,7 +60,7 @@
 		var/mob/M = target
 		if(M.anti_magic_check())
 			M.visible_message("<span class='warning'>[src] fizzles on contact with [target]!</span>")
-			return BULLET_ACT_BLOCK
+			return
 	var/teleammount = 0
 	var/teleloc = target
 	if(!isturf(target))
@@ -86,9 +86,9 @@
 		var/mob/M = target
 		if(M.anti_magic_check())
 			M.visible_message("<span class='warning'>[src] fizzles on contact with [target]!</span>")
-			return BULLET_ACT_BLOCK
+			return
 	if(isturf(target))
-		return BULLET_ACT_HIT
+		return
 
 	var/turf/origin_turf = get_turf(target)
 	var/turf/destination_turf = find_safe_turf()
@@ -142,7 +142,7 @@
 		if(M.anti_magic_check())
 			M.visible_message("<span class='warning'>[src] fizzles on contact with [M]!</span>")
 			qdel(src)
-			return BULLET_ACT_BLOCK
+			return
 	wabbajack(change)
 	qdel(src)
 
@@ -341,7 +341,7 @@
 		if(M.anti_magic_check())
 			M.visible_message("<span class='warning'>[src] vanishes on contact with [target]!</span>")
 			qdel(src)
-			return BULLET_ACT_BLOCK
+			return
 	. = ..()
 
 /obj/item/projectile/magic/arcane_barrage
@@ -379,11 +379,11 @@
 		if(M.anti_magic_check())
 			M.visible_message("<span class='warning'>[src] vanishes on contact with [A]!</span>")
 			qdel(src)
-			return BULLET_ACT_BLOCK
+			return
 		if(M.anchored)
 			return ..()
 		M.forceMove(src)
-		return BULLET_ACT_HIT
+		return FALSE
 	return ..()
 
 /obj/item/projectile/magic/locker/on_hit(target)
@@ -486,7 +486,7 @@
 		if(M.anti_magic_check())
 			visible_message("<span class='warning'>[src] fizzles on contact with [target]!</span>")
 			qdel(src)
-			return BULLET_ACT_BLOCK
+			return
 	tesla_zap(src, tesla_range, tesla_power, tesla_flags)
 	qdel(src)
 
@@ -513,7 +513,7 @@
 		var/mob/living/M = target
 		if(M.anti_magic_check())
 			visible_message("<span class='warning'>[src] vanishes into smoke on contact with [target]!</span>")
-			return BULLET_ACT_BLOCK
+			return
 		M.take_overall_damage(0,10) //between this 10 burn, the 10 brute, the explosion brute, and the onfire burn, your at about 65 damage if you stop drop and roll immediately
 	var/turf/T = get_turf(target)
 	explosion(T, -1, exp_heavy, exp_light, exp_flash, 0, flame_range = exp_fire)
@@ -530,7 +530,7 @@
 	if(ismob(target))
 		var/mob/living/M = target
 		if(M.anti_magic_check())
-			return BULLET_ACT_BLOCK
+			return
 	var/turf/T = get_turf(target)
 	for(var/i=0, i<50, i+=10)
 		addtimer(CALLBACK(GLOBAL_PROC, .proc/explosion, T, -1, exp_heavy, exp_light, exp_flash, FALSE, FALSE, exp_fire), i)

@@ -89,7 +89,6 @@
 		beaker = null
 
 /obj/machinery/atmospherics/components/unary/cryo_cell/update_icon()
-
 	cut_overlays()
 
 	if(panel_open)
@@ -249,18 +248,17 @@
 /obj/machinery/atmospherics/components/unary/cryo_cell/open_machine(drop = FALSE)
 	if(!state_open && !panel_open)
 		on = FALSE
+		..()
 	for(var/mob/M in contents) //only drop mobs
 		M.forceMove(get_turf(src))
 		if(isliving(M))
 			var/mob/living/L = M
 			L.update_mobility()
 	occupant = null
-	flick("pod-open-anim", src)
-	..()
+	update_icon()
 
 /obj/machinery/atmospherics/components/unary/cryo_cell/close_machine(mob/living/carbon/user)
 	if((isnull(user) || istype(user)) && state_open && !panel_open)
-		flick("pod-close-anim", src)
 		..(user)
 		return occupant
 
@@ -391,7 +389,6 @@
 				on = FALSE
 			else if(!state_open)
 				on = TRUE
-			update_icon()
 			. = TRUE
 		if("door")
 			if(state_open)
@@ -409,6 +406,7 @@
 					usr.put_in_hands(beaker)
 				beaker = null
 				. = TRUE
+	update_icon()
 
 /obj/machinery/atmospherics/components/unary/cryo_cell/update_remote_sight(mob/living/user)
 	return // we don't see the pipe network while inside cryo.
