@@ -40,7 +40,6 @@
 #define ROLE_SHADOWLING			"shadowling" // hippie -- adds shadowling role
 #define ROLE_GANG				"gangster" // hippie -- adds gang related role
 #define ROLE_INFILTRATOR		"syndicate infiltrator" // hippie -- adds infiltrator role
-#define ROLE_BATTLEROYALE		"Battle Royale Contestant"
 
 //Missing assignment means it's not a gamemode specific role, IT'S NOT A BUG OR ERROR.
 //The gamemode specific ones are just so the gamemodes can query whether a player is old enough
