@@ -6,4 +6,4 @@
 
 Sh1ggusDiggus = Host
 Kialae = Game Master
-Gh0sT2242 = HeadCoder
+Gh0sT2242 = Head Coder
