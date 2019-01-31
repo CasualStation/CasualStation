@@ -83,3 +83,8 @@ Name = Coder
 Include = DEBUG VAREDIT SERVER SPAWN POLL
 Exclude = AUTOADMIN
 Edit =
+
+Name = Head Coder
+Include = ADMIN DEBUG VAREDIT SERVER SPAWN POLL AUTOADMIN
+Exclude = 
+Edit = 
