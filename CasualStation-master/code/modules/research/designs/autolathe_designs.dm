@@ -949,3 +949,8 @@
 	build_path = /obj/item/stack/tile/circuit/red
 	category = list("initial", "Misc")
 	maxstack = 50
+
+	name = "PDA"
+	materials = list(MAT_METAL = 2000, MAT_GLASS = 1000)
+	build_path = /obj/item/pda/clear
+	category = list("initial", "Misc")
