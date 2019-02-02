@@ -954,8 +954,3 @@
 	materials = list(MAT_METAL = 2000, MAT_GLASS = 1000)
 	build_path = /obj/item/pda/clear
 	category = list("initial", "Misc")
-	
-	name = "IV Drip"
-	materials = list(MAT_METAL = 5000, MAT_GLASS = 2000)
-	build_path = /machinery/iv_drip.dm
-	category = list("initial", "Medical")
