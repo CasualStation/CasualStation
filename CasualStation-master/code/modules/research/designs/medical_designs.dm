@@ -221,7 +221,18 @@
 	materials = list(MAT_METAL = 4000, MAT_GLASS = 2000, MAT_PLASMA = 2000, MAT_URANIUM = 3000, MAT_TITANIUM = 3000)
 	category = list("Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
-
+	
+		
+/datum/design/BloodBag
+	name = "Blood Bag"
+	desc = "A bag, to hold blood"
+	id = "bloodbag"
+	build_path = /obj/item/reagent_containers/blood
+	build_type = PROTOLATHE
+	materials = list(MAT_PLASTIC = 2000)
+	category = list("Medical Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
+	
 /////////////////////////////////////////
 //////////Cybernetic Implants////////////
 /////////////////////////////////////////
@@ -616,3 +627,4 @@
 	id = "surgery_zombie"
 	surgery = /datum/surgery/advanced/necrotic_revival
 	research_icon_state = "surgery_head"
+
