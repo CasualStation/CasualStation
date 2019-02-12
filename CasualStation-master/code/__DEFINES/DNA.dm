@@ -27,6 +27,7 @@
 #define UNINTELLIGIBLE		/datum/mutation/human/unintelligible
 #define SWEDISH		/datum/mutation/human/swedish
 #define CHAV		/datum/mutation/human/chav
+#define COMMUNISM		/datum/mutation/human/communism
 #define ELVIS		/datum/mutation/human/elvis
 #define RADIOACTIVE	/datum/mutation/human/radioactive
 #define GLOWY		/datum/mutation/human/glow
