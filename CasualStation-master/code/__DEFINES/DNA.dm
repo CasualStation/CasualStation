@@ -26,6 +26,7 @@
 #define STONER		/datum/mutation/human/stoner
 #define UNINTELLIGIBLE		/datum/mutation/human/unintelligible
 #define SWEDISH		/datum/mutation/human/swedish
+#define COMMUNISM		/datum/mutation/human/communism
 #define CHAV		/datum/mutation/human/chav
 #define ELVIS		/datum/mutation/human/elvis
 #define RADIOACTIVE	/datum/mutation/human/radioactive
