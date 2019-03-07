@@ -664,7 +664,7 @@
 	category = CAT_MISC
 	tools = list(TOOL_WRENCH, TOOL_WELDER, TOOL_WIRECUTTER)
 
-/datum/crafting_recipe/IV_Drip
+/datum/crafting_recipe/iv_drip
 	name = "IV Drip"
 	result = /machinery/iv_drip.dm
 	time = 60
@@ -673,7 +673,7 @@
 	category = CAT_MISC
 
 
-/datum/crafting_recipe/Crowbar
+/datum/crafting_recipe/crowbar
 	name = "Crowbar"
 	result = /obj/item/crowbar.dm
 	time = 60
