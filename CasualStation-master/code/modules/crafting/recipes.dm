@@ -671,3 +671,11 @@
 	reqs = list(/obj/item/stack/sheet/metal = 10)
 	tools = list(TOOL_WRENCH)
 	category = CAT_MISC
+
+
+/datum/crafting_recipe/Crowbar
+	name = "Crowbar"
+	result = /obj/item/crowbar.dm
+	time = 60
+	reqs = list(/obj/item/stack/rods = 2)
+	category = CAT_MISC
