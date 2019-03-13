@@ -663,11 +663,3 @@
 	reqs = list(/obj/item/tank/internals/oxygen/red = 2, /obj/item/extinguisher = 1, /obj/item/pipe = 3, /obj/item/stack/cable_coil = 30)//red oxygen tank so it looks right
 	category = CAT_MISC
 	tools = list(TOOL_WRENCH, TOOL_WELDER, TOOL_WIRECUTTER)
-
-/datum/crafting_recipe/IV_Drip
-	name = "IV Drip"
-	result = /machinery/iv_drip.dm
-	time = 60
-	reqs = list(/obj/item/stack/sheet/metal = 10)
-	tools = list(TOOL_WRENCH)
-	category = CAT_MISC
