@@ -280,14 +280,6 @@
 	name = "\improper DNA injector (Anti-Chav)"
 	remove_mutations = list(CHAV)
 
-/obj/item/dnainjector/Communism
-	name = "\improper DNA injector (Communism)"
-	add_mutations = list(COMMUNISM)
-
-/obj/item/dnainjector/antiswedish
-	name = "\improper DNA injector (Anti-Communism)"
-	remove_mutations = list(COMMUNISM)
-
 /obj/item/dnainjector/elvismut
 	name = "\improper DNA injector (Elvis)"
 	add_mutations = list(ELVIS)
