@@ -1,5 +1,3 @@
-## New code found at https://github.com/Gh0sT2242/Yogstation-TG/  For now
-
 
 
 
